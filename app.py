@@ -25,7 +25,7 @@ if archivo_subido is not None:
         def identificar_tienda(row):
             sku = str(row.get('SKU', '')).upper()
             if sku.startswith('CRIS'): return 'Cristhian'
-            elif sku.startswith('ALE'): return 'Alejandro'
+            elif sku.startswith('AND'): return 'Andrés'
             elif sku.startswith('JHO'): return 'Jhoan'
             elif sku.startswith('NEX'): return 'NexusMarket'
             return 'Sin Identificar / Error SKU'
